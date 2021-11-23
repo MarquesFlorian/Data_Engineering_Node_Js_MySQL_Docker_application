@@ -11,6 +11,6 @@ exports.count = async function () {
     return res[0];
 }
 
-exports.increment = async function (information) {
-    await db.query("INSERT INTO counts(information) VALUES (?)", [information]);
+exports.increment = async function () {
+    await db.query("INSERT INTO counts(information) VALUES (?)", ["information"]);
 }
